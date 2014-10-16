@@ -1,0 +1,38 @@
+/* Ollie Ford & Co - Intranet */
+
+$susy: (
+  columns: 24,
+  
+  gutter-position: split,
+  global-box-sizing: border-box, 
+  debug: (
+    image: show-columns, 
+    output: overlay, 
+    toggle: bottom left
+  )
+);
+
+/* Colours */
+
+$primary-color: #6C7A89;
+$secondary-color: #444;
+
+
+$header-bg: transparent;
+
+
+/* Sizes */
+
+/* Media Queries */
+$min-desktop: 768px;
+$min-tablet: 481px;
+$max-tablet: 767px;
+
+/* Sidebar */
+$off-canvas-width: span(16 wide);
+$off-canvas-width-tablet: span(8 wide);
+$off-canvas-width-desktop: span(6 wide);
+$off-canvas-width-mini: span(1 wide);
+
+/* Header */
+$header-height: 54px;

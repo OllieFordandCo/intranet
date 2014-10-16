@@ -1,0 +1,42 @@
+.canvas-toggle {
+  @extend %button_reset; 
+
+  position: absolute;
+  padding: 17px 17px;
+   
+  &:hover {
+  
+	  .bar {
+
+	  }
+  
+  }
+   
+  .bar {
+	  width: 30px;
+	  display: block;
+	  background-color: $primary-color;
+	  height: 4px;
+	  @include transition(width);
+	  @include transition-duration(0.2s);
+	  @include transition-timing-function(ease);
+	  @include transition-delay(0.5s);
+	  
+	  + .bar {
+		  margin-top: 4px;
+		  @include transition-duration(0.4s);
+		  
+		  + .bar {
+			@include transition-duration(0.6s);			 
+		  }
+	  }
+	  
+	  .open & {
+		  
+		  width: 5px;
+		  
+	  }				
+	  
+  } /* .bar */
+
+}

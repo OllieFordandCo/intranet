@@ -1,0 +1,39 @@
+.off-canvas {
+
+	background-color: $primary-color;
+	
+	position: fixed;
+	display: inline;
+	margin: 0;
+	min-height: 120%;
+	padding-bottom: 20%;
+	@include transition(left 0.5s ease, width 0.5s ease);
+	
+	width: $off-canvas-width;
+	left: -$off-canvas-width;
+	
+	@media screen and (min-width: $min-tablet) {
+		width: $off-canvas-width-tablet;
+		left: -$off-canvas-width-tablet;	
+	}
+
+	@media screen and (min-width: $min-desktop) {
+
+		width: $off-canvas-width-mini;
+		left: 0;	
+		
+	}
+
+	.open & {
+	
+		@media screen and (min-width: $min-desktop) {
+	
+			width: $off-canvas-width-desktop;
+			left: 0;
+				
+		}
+		left: 0;
+	
+	} 
+  
+}

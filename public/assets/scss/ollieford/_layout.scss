@@ -1,0 +1,46 @@
+.app-container {
+
+	overflow: hidden;
+
+	.app {
+		
+		@include container(); 
+
+		.content-wrapper {
+			position: relative;
+			z-index: 20;
+			
+			width: 100%;
+			/*padding-top: $header-height;*/
+			min-height: 1200px;				
+			/* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+			
+			@include transition(margin-left 0.5s ease, box-shadow 0.5s ease);
+
+			@media screen and (min-width: $min-desktop) {
+				width: 100% - $off-canvas-width-mini;
+				margin-left: $off-canvas-width-mini;
+			}		
+
+		}
+						
+		&.open {
+			
+			.content-wrapper {
+				/*box-shadow: 0 0 50px rgba(0,0,0,0.5);*/
+				margin-left: $off-canvas-width;
+				
+				@media screen and (min-width: $min-tablet) {
+					margin-left: $off-canvas-width-tablet;	
+				}
+			
+				@media screen and (min-width: $min-desktop) {
+					margin-left: $off-canvas-width-desktop;
+				}
+			}
+		
+		}
+		
+	}
+
+}
