@@ -123,7 +123,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Jenssegers\Agent\AgentServiceProvider',
-		'OllieFordandCo\Social-Login\SocialLoginServiceProvider',
+		'OllieFordandCo\Housekeeper\HousekeeperServiceProvider',
+		'Artdarek\OAuth\OAuthServiceProvider'
 	),
 
 	/*
@@ -190,9 +191,10 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Sentry' 		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'Sentry' 	  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Agent'           => 'Jenssegers\Agent\Facades\Agent',
-		'SociaLogin'	  => 'OllieFordandCo\Social-Login\Facades\SocialLogin',
+		'Housekeeper'	  => 'OllieFordandCo\Housekeeper\Facades\Housekeeper',
+		'OAuth' 	  => 'Artdarek\OAuth\Facade\OAuth',
 	),
 
 );
