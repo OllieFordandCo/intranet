@@ -30,15 +30,15 @@
 	},	
 	"scripts": {
 		"post-install-cmd": [
-			"/usr/local/php5429-cgi/bin/php artisan clear-compiled",
-			"/usr/local/php5429-cgi/bin/php artisan optimize"
+			"php artisan clear-compiled",
+			"php artisan optimize"
 		],
 		"post-update-cmd": [
-			"/usr/local/php5429-cgi/bin/php artisan clear-compiled",
-			"/usr/local/php5429-cgi/bin/php artisan optimize"
+			"php artisan clear-compiled",
+			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"/usr/local/php5429-cgi/bin/php artisan key:generate"
+			"php artisan key:generate"
 		]
 	},
 	"config": {
