@@ -26,6 +26,14 @@ Route::group(array('domain' => 'staff.myapp.com'), function()
 
 });
 
+Route::get(
+	'/components/{component}',
+	array(
+		'as' => 'components',
+		'uses' => 'ComponentsController@showComponents'
+	)
+);
+
 Route::get('/', array('as' => 'welcome', 'uses' => 'HomeController@showWelcome'));
 
 /* Example of user access to account 
