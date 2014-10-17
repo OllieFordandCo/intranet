@@ -10,12 +10,12 @@
 		"philf/setting": "dev-master",
 		"cartalyst/sentry": "2.1.*",
 		"jenssegers/agent": "*",
-		"olliefordandco/social-login": "dev-master"	
+		"olliefordandco/housekeeper": "dev-master"	
 	},
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/OllieFordandCo/social-login"
+			"url": "https://github.com/OllieFordandCo/housekeeper"
 		}
 	],	
 	"autoload": {

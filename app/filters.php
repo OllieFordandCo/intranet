@@ -29,6 +29,13 @@ App::before(function($request)
 		//}
 	);
 	
+	// Define the application session
+	if (!Session::has('intranet'))
+	{
+		$intranet = array();
+		Session::put('intranet', $intranet);
+	}		
+	
     // Singleton (global) object - $intranet
     App::singleton('intranet', function(){        
 		$intranet = new stdClass;
