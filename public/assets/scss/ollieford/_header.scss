@@ -34,4 +34,12 @@
 	
 	}
 
+	&.open.full {
+		
+		#main-header {
+			left: 100%;			
+		}
+	
+	}  /* &.open.full */
+
 }

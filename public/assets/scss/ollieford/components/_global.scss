@@ -1,0 +1,15 @@
+/* CSS Document */
+
+.component {
+
+	min-width: 320px;
+	width: 100%;
+	box-shadow: 0 0 48px rgba(0,0,0,0.42);
+
+	&.default {
+		background-color: #e1e1e1;
+		border: 1px solid #000;
+		border: 1px solid rgba(0, 0, 0, 0.6);
+	}
+
+}

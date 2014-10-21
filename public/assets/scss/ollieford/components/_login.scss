@@ -1,0 +1,40 @@
+/* CSS Document */
+
+.component {
+	
+	&.login {
+
+		margin: 0 auto;
+		min-height: 300px;
+	
+		@media screen and (min-width: $min-tablet) {
+			width: 480px;		
+		}
+	
+		.banner-image {
+			height: 200px;
+			width: 100%;
+			background-size: cover;
+		}
+	
+		.housekeeper {
+			margin-top: -50px;
+			text-align: center;
+			a {
+				width: 80px;
+				height: 80px;
+				display: inline-block;
+				margin: 10px;
+				padding: 15px;
+				border-radius: 50%;	
+			
+				&.facebook {background-color:#3664a2}
+				&.twitter {background-color:#55acee}
+				&.freshbooks {background-color:#86c620}
+			
+			} /* a */
+		}
+	
+	}
+	
+}

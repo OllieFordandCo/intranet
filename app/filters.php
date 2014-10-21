@@ -14,19 +14,19 @@
 App::before(function($request)
 {
 	// What needs to happen before nothing happens
-	Config::set('remote.connections.runtime.host', '212.67.220.156');
+	Config::set('remote.connections.runtime.host', '192.168.10.10');
 	Config::set('remote.connections.runtime.port', '22');
-	Config::set('remote.connections.runtime.username', 'root');
-	Config::set('remote.connections.runtime.password', 'nDhnqrst9Fez');
+	Config::set('remote.connections.runtime.username', 'vagrant');
+	Config::set('remote.connections.runtime.password', 'vagrant');
 	Config::set('remote.connections.runtime.root', '');
 								
 	SSH::into('runtime')->run(array(
 		'cd '.public_path().'/assets/',
 		'sass scss/ollieford.scss css/ollieford.css',
-		'sass scss/scaffolding.scss css/scaffolding.css')
-		//function ($line) {	
-		//	echo $line.PHP_EOL;																
-		//}
+		'sass scss/scaffolding.scss css/scaffolding.css'),
+		function ($line) {	
+			echo $line.PHP_EOL;																
+		}
 	);
 	
 	// Define the application session

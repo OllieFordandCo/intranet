@@ -40,6 +40,16 @@
 			}
 		
 		}
+
+		&.open.full {
+			
+			.content-wrapper {
+
+				margin-left: 100%;
+				
+			}
+		
+		} /* &.open.full */
 		
 	}
 
